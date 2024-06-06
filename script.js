@@ -12,7 +12,7 @@ function geoPosition() {
       longitude = results[0].geometry.location.lng();
       console.log("entro aquí´i latitut es: " + latitude);
     }
-    else console.log("NO ENTRO AL CONDICIONAL. ");
+    // else console.log("NO ENTRO AL CONDICIONAL. ");
   });
 }
 
@@ -41,7 +41,7 @@ function initMap() {
   // we retrieve the marker's position using the
   // google.maps.LatLng.getPosition() method.
   const infowindow = new google.maps.InfoWindow({
-    content: "<p>Marker Location:" + marker.getPosition() + "</p>",
+    content: "<p>Ets aqui:" + marker.getPosition() + "</p>",
   });
 
   google.maps.event.addListener(marker, "click", () => {
